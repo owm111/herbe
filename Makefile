@@ -14,9 +14,11 @@ herbe: herbe.c config.h
 install: herbe
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	cp -f herbe ${DESTDIR}${PREFIX}/bin
+	install -t ${DESTDIR}${PREFIX}/bin notify-send
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/herbe
+	rm -f ${DESDIR}${PREFIX}/bin/notify-send
 
 clean:
 	rm -f herbe
