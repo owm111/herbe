@@ -4,6 +4,7 @@ static const char *font_color = "#ececec";
 static const char *font_pattern = "monospace:size=10";
 static unsigned line_spacing = 5;
 static unsigned int padding = 15;
+static int use_primary_monitor = 0;
 
 static unsigned int width = 450;
 static unsigned int border_size = 2;
